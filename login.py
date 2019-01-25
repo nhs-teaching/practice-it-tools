@@ -50,13 +50,13 @@ class PracticeitAPI:
 
     def fetchAndCacheResults(self, period, chapter):
         results = self._fetchResults(period, chapter)
-        output = 'results/p' + str(period) + '/c' + str(chapter) + '.csv' 
+        output = 'results/p' + str(period) + '/c' + str(chapter) + '.csv'
         self._cacheResults(results, output)
 
 def main():
     parser = OptionParser()
     # <period> <chapter>
-    (options, args) = parser.parse_args() 
+    (options, args) = parser.parse_args()
 
     api = PracticeitAPI()
     api.login(os.environ.get('PRACTICEIT_UNAME'), os.environ.get('PRACTICEIT_PW'))

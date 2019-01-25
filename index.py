@@ -15,7 +15,7 @@ def main():
 
     assignments = Assignments()
     problems = assignments.getProblems(args[1], args[2])
-    
+
     roster = Roster(args[0])
     roster.setupScoreSheet()
 
