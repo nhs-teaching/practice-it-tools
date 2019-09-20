@@ -7,9 +7,9 @@ import sys
 from optparse import OptionParser
 
 def _getCourseId(period):
-    if (period == 1):
+    if (period == "1"):
         return "1758"
-    elif (period == 5):
+    elif (period == "5"):
         return "1723"
     else:
         return "1724"
