@@ -7,8 +7,12 @@ import sys
 from optparse import OptionParser
 
 def _getCourseId(period):
-    OFFSET = 1391
-    return str(OFFSET + int(period))
+    if (period == 1):
+        return "1758"
+    elif (period == 5):
+        return "1723"
+    else:
+        return "1724"
 
 def _getChapterId(chapter):
     OFFSET = 246
